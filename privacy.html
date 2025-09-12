@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy - GoRoam</title>
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font-family:system-ui,Arial,sans-serif;line-height:1.55}</style>
+  <title>Privacy Policy – GoRoam</title>
+  <meta name="description" content="How GoRoam collects, uses, and protects your information." />
+  <style>
+    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;line-height:1.6}
+    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    header{border-bottom:1px solid var(--border);background:var(--soft)}
+    .nav{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+    .nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .nav a:hover{color:var(--accent)}
+    .brand{display:flex;align-items:center;gap:.5rem}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    h1{font-size:2rem;margin:.25rem 0 1rem}
+    h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    p{margin:.5rem 0 1rem}
+    ul{margin:.5rem 0 1rem 1.25rem}
+    .muted{color:var(--muted)}
+    footer{margin:3rem 0 2rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem}
+    a{color:var(--accent)}
+    a:hover{text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> September 5, 2025</p>
+  <header>
+    <nav class="nav container" aria-label="Site">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <a href="about.html">GoRoam</a>
+      </div>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+  </header>
 
-  <p>This Privacy Policy explains how GoRoam (“<strong>we</strong>”, “<strong>us</strong>”, “<strong>our</strong>”) collects, uses, and shares information when you use the GoRoam mobile and web apps (“<strong>App</strong>”). By using the App, you agree to this Policy.</p>
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> September 2025</p>
 
-  <h2>Information We Collect</h2>
-  <ul>
-    <li><strong>Account data:</strong> email, display name/username, Firebase UID, profile photo.</li>
-    <li><strong>Content you provide:</strong> reviews, ratings, photos, comments.</li>
-    <li><strong>Location data:</strong> approximate location (to power place search and local features). You can disable device location in your OS settings; core features may be limited.</li>
-    <li><strong>Usage & device data:</strong> IP address, device identifiers, app version, OS, pages/actions, timestamps, crash logs.</li>
-  </ul>
+    <p>This Privacy Policy explains how GoRoam (“<strong>we</strong>”, “<strong>us</strong>”, “<strong>our</strong>”) collects, uses, and shares information when you use the GoRoam mobile and web apps (“<strong>App</strong>”). By using the App, you agree to this Policy.</p>
 
-  <h2>How We Use Information</h2>
-  <ul>
-    <li>Authenticate your account and provide core features (favorites, reviews, media uploads).</li>
-    <li>Find nearby places and personalize results (using location).</li>
-    <li>Keep the service reliable and secure (analytics, crash reporting, abuse prevention).</li>
-    <li>Communicate with you about important changes, support, or service updates.</li>
-  </ul>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Account data:</strong> email, display name/username, Firebase UID, profile photo.</li>
+      <li><strong>Content you provide:</strong> reviews, ratings, photos, comments.</li>
+      <li><strong>Location data (optional):</strong> approximate device/location to power place search and local features. You can disable device location in OS settings; some features may be limited.</li>
+      <li><strong>Usage &amp; device data:</strong> IP address, device identifiers, app version, OS, pages/actions, timestamps, crash logs.</li>
+    </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>We share data with trusted vendors that help us operate the App. Their handling of data is governed by their own policies:</p>
-  <ul>
-    <li><a href="https://firebase.google.com/support/privacy">Firebase (Auth, Storage, Crashlytics)</a></li>
-    <li><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></li>
-    <li><a href="https://policies.google.com/privacy">Google (Maps/Places APIs)</a></li>
-  </ul>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>Authenticate your account and provide core features (favorites, reviews, media uploads).</li>
+      <li>Find nearby places and personalize results (using location, if enabled).</li>
+      <li>Maintain reliability and security (analytics, crash reporting, abuse prevention).</li>
+      <li>Communicate important changes, support responses, or service updates.</li>
+    </ul>
 
-  <h2>Your Choices & Rights</h2>
-  <ul>
-    <li><strong>Access/Download/Deletion:</strong> You may request a copy or deletion of your account data by emailing <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a>. If the App includes an in-app “Delete Account” action, using it will permanently remove your account.</li>
-    <li><strong>Opt-out of marketing:</strong> Use the unsubscribe link in emails or email us.</li>
-    <li><strong>California & EU/UK residents:</strong> Subject to local law, you may have rights to access, delete, correct, or restrict processing of your personal data and to object or withdraw consent where applicable.</li>
-  </ul>
+    <h2>Third-Party Services</h2>
+    <p>We use trusted vendors to operate the App; their handling of data is governed by their policies:</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase (Auth, Storage, Crashlytics)</a></li>
+      <li><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></li>
+      <li><a href="https://policies.google.com/privacy">Google (Maps/Places APIs)</a></li>
+    </ul>
 
-  <h2>Data Retention</h2>
-  <p>We retain account data while your account is active and as needed for legal/compliance, security, and backup. User content (e.g., reviews) may be anonymized when accounts are deleted if required for platform integrity and anti-abuse.</p>
+    <h2>Your Choices &amp; Rights</h2>
+    <ul>
+      <li><strong>Access / Download / Deletion:</strong> Use in-app controls (e.g., delete account) where available, or email <a href="mailto:support@approamly.com?subject=Privacy%20Request">support@approamly.com</a>.</li>
+      <li><strong>Marketing:</strong> Use unsubscribe links in emails or contact us.</li>
+      <li><strong>California &amp; EU/UK residents:</strong> Subject to local law, you may have rights to access, delete, correct, or restrict processing of your personal data and to object or withdraw consent where applicable.</li>
+    </ul>
 
-  <h2>Security</h2>
-  <p>We use reasonable technical and organizational measures to protect your information. No method of transmission or storage is 100% secure.</p>
+    <h2>Data Retention</h2>
+    <p>We retain account data while your account is active and as needed for legal/compliance, security, and backup. User content (e.g., reviews) may be anonymized when accounts are deleted if required for platform integrity and anti-abuse.</p>
 
-  <h2>Children</h2>
-  <p>GoRoam is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal data, contact us and we will take appropriate action.</p>
+    <h2>Security</h2>
+    <p>We use reasonable technical and organizational measures to protect information. No method of transmission or storage is 100% secure.</p>
 
-  <h2>Changes to this Policy</h2>
-  <p>We may update this Policy. We will post the updated version here with a new “Last updated” date and, if changes are material, provide additional notice.</p>
+    <h2>Children</h2>
+    <p>GoRoam is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal data, contact us and we will take appropriate action.</p>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a></p>
-  
-  <p><em>Note: replace emails if you use a different official address.</em></p>
+    <h2>Changes to this Policy</h2>
+    <p>We may update this Policy. We will post updates here with a new “Last updated” date and, if changes are material, provide additional notice.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@approamly.com">support@approamly.com</a></p>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> GoRoam. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
