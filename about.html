@@ -1,26 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About GoRoam</title>
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font-family:system-ui,Arial,sans-serif;line-height:1.55}</style>
+  <meta name="description" content="GoRoam helps you discover places, share quick reviews, and keep track of your favorites—privately and effortlessly." />
+  <style>
+    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;line-height:1.6}
+    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    header{border-bottom:1px solid var(--border);background:var(--soft)}
+    .nav{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+    .nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .nav a:hover{color:var(--accent)}
+    .brand{display:flex;align-items:center;gap:.5rem}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    h1{font-size:2rem;margin:.25rem 0 1rem}
+    h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    p{margin:.5rem 0 1rem}
+    ul,ol{margin:.5rem 0 1rem 1.25rem}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;margin:1rem 0}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:1rem}
+    @media (min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    footer{margin:3rem 0 2rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem}
+    a{color:var(--accent)}
+    a:hover{text-decoration:underline}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--soft);border:1px solid var(--border);border-radius:6px;padding:.1rem .35rem}
+  </style>
 </head>
 <body>
-  <h1>About GoRoam</h1>
-  <p>GoRoam helps you discover places, share reviews, and keep track of your favorites.</p>
+  <header>
+    <nav class="nav container" aria-label="Site">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <a href="about.html" aria-current="page">GoRoam</a>
+      </div>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>Contact</h2>
-  <ul>
-    <li>Support: <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a></li>
-    <li>Privacy: <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a></li>
-  </ul>
+  <main class="container">
+    <h1>About GoRoam</h1>
+    <p class="muted">Last updated: September 2025</p>
 
-  <h2>Legal</h2>
-  <ul>
-    <li><a href="/legalterms.html">Terms of Service</a></li>
-    <li><a href="/privacy.html">Privacy Policy</a></li>
-    <li><a href="/support.html">Support</a></li>
-  </ul>
+    <div class="card">
+      <p><strong>GoRoam</strong> helps you discover places, share quick reviews, and keep track of your favorites—privately and effortlessly. Whether it’s a cozy coffee shop, a hidden hiking trail, or a late-night food spot, GoRoam makes it easy to capture your experience and find where to go next.</p>
+    </div>
+
+    <h2>What you can do</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Discover &amp; Save</h3>
+        <ul>
+          <li>Browse by category (Coffee, Restaurants, Adventure, Entertainment, Fitness).</li>
+          <li>See posts from people you follow and spots nearby.</li>
+          <li>Save places you love to revisit later.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Share Quickly</h3>
+        <ul>
+          <li>Post a photo, a sentence, and a tag—done.</li>
+          <li>Mention places to keep your map tidy.</li>
+          <li>Comment and reply with clean, threaded conversations.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Keep Control</h3>
+        <ul>
+          <li>Private account mode shows posts only to approved followers.</li>
+          <li>Edit or delete your posts and comments anytime.</li>
+          <li>Like/unlike with clear counts—no mystery.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Built for Real Life</h3>
+        <ul>
+          <li>Fast, simple UI focused on places—no clutter.</li>
+          <li>Optional location filters to surface relevant spots.</li>
+          <li>Thoughtful notifications so you don’t miss what matters.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Privacy at a glance</h2>
+    <div class="card">
+      <ul>
+        <li>You control who can see your content via Private Account settings.</li>
+        <li>Delete posts/comments in-app; account deletion is available in Settings.</li>
+        <li>Place and region tags are optional—use them when useful.</li>
+        <li>Read the full <a href="privacy.html">Privacy Policy</a> for details on data, retention, and your rights.</li>
+      </ul>
+      <p>Questions about privacy? Email <a href="mailto:support@approamly.com">support@approamly.com</a>.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Support:</strong> <a href="mailto:support@approamly.com?subject=GoRoam%20Support">support@approamly.com</a></li>
+        <li><strong>Business / Partnerships:</strong> <a href="mailto:GoRoam@approamly.com?subject=GoRoam%20Business%20Inquiry">GoRoam@approamly.com</a></li>
+        <li class="muted">Tip: If links don’t open your mail app, copy the address or use <span class="kbd">⌘</span> + <span class="kbd">C</span> / <span class="kbd">Ctrl</span> + <span class="kbd">C</span>.</li>
+      </ul>
+    </div>
+
+    <h2>Legal</h2>
+    <ul>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> GoRoam. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
