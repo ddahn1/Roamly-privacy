@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GoRoam Support</title>
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font-family:system-ui,Arial,sans-serif;line-height:1.55}</style>
+  <title>Support – GoRoam</title>
+  <meta name="description" content="Get help with GoRoam, report issues, and contact support." />
+  <style>
+    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;line-height:1.6}
+    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    header{border-bottom:1px solid var(--border);background:var(--soft)}
+    .nav{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+    .nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .nav a:hover{color:var(--accent)}
+    .brand{display:flex;align-items:center;gap:.5rem}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    h1{font-size:2rem;margin:.25rem 0 1rem}
+    h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    p{margin:.5rem 0 1rem}
+    ol{margin:.5rem 0 1rem 1.25rem}
+    .muted{color:var(--muted)}
+    footer{margin:3rem 0 2rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem}
+    a{color:var(--accent)}
+    a:hover{text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>GoRoam Support</h1>
-  <p>Questions or need help? Email us at <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a>.</p>
-  <p>We typically respond within 2–3 business days.</p>
+  <header>
+    <nav class="nav container" aria-label="Site">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <a href="about.html">GoRoam</a>
+      </div>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>Report a Problem</h2>
-  <ol>
-    <li>Describe what you were doing and what went wrong.</li>
-    <li>Include screenshots if possible and your app version (Settings → About).</li>
-    <li>Mention device model and OS version.</li>
-  </ol>
+  <main class="container">
+    <h1>GoRoam Support</h1>
+    <p>Questions or need help? Email us at <a href="mailto:support@approamly.com">support@approamly.com</a>.</p>
+    <p class="muted">We typically respond within 2–3 business days.</p>
 
-  <p>For privacy requests (access/delete data), please include “Privacy Request” in the subject line.</p>
+    <h2>Report a Problem</h2>
+    <ol>
+      <li>Describe what you were doing and what went wrong.</li>
+      <li>Include screenshots if possible and your app version (Settings → About).</li>
+      <li>Mention device model and OS version.</li>
+    </ol>
+
+    <p>For privacy requests (access/delete data), please include <em>“Privacy Request”</em> in the subject line or see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Business & Partnerships</h2>
+    <p>Email: <a href="mailto:GoRoam@approamly.com?subject=GoRoam%20Business%20Inquiry">GoRoam@approamly.com</a></p>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> GoRoam. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
