@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Service - GoRoam</title>
-  <style>body{max-width:800px;margin:2rem auto;padding:0 1rem;font-family:system-ui,Arial,sans-serif;line-height:1.55}</style>
+  <title>Terms of Service – GoRoam</title>
+  <meta name="description" content="Terms governing your use of GoRoam." />
+  <style>
+    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;line-height:1.6}
+    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    header{border-bottom:1px solid var(--border);background:var(--soft)}
+    .nav{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+    .nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .nav a:hover{color:var(--accent)}
+    .brand{display:flex;align-items:center;gap:.5rem}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    h1{font-size:2rem;margin:.25rem 0 1rem}
+    h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    p{margin:.5rem 0 1rem}
+    ul{margin:.5rem 0 1rem 1.25rem}
+    .muted{color:var(--muted)}
+    footer{margin:3rem 0 2rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem}
+    a{color:var(--accent)}
+    a:hover{text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>Terms of Service</h1>
-  <p><strong>Last updated:</strong> September 5, 2025</p>
+  <header>
+    <nav class="nav container" aria-label="Site">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <a href="about.html">GoRoam</a>
+      </div>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+  </header>
 
-  <p>These Terms govern your use of the GoRoam apps and services (“<strong>GoRoam</strong>”, “<strong>we</strong>”). By using GoRoam you agree to these Terms.</p>
+  <main class="container">
+    <h1>Terms of Service</h1>
+    <p><strong>Last updated:</strong> September 2025</p>
 
-  <h2>Eligibility</h2>
-  <p>You must be at least 13 years old to use GoRoam. If you are under the age of majority in your jurisdiction, you must have your parent/guardian’s consent.</p>
+    <p>These Terms govern your use of the GoRoam apps and services (“<strong>GoRoam</strong>”, “<strong>we</strong>”). By using GoRoam you agree to these Terms.</p>
 
-  <h2>Your Account</h2>
-  <ul>
-    <li>You are responsible for maintaining the security of your account and device.</li>
-    <li>You must provide accurate information and comply with applicable laws.</li>
-  </ul>
+    <h2>Eligibility</h2>
+    <p>You must be at least 13 years old to use GoRoam. If you are under the age of majority in your jurisdiction, you must have your parent/guardian’s consent.</p>
 
-  <h2>User Content & Conduct</h2>
-  <ul>
-    <li>You retain ownership of content you submit (e.g., reviews, photos). You grant GoRoam a worldwide, non-exclusive, royalty-free license to host, store, reproduce, modify, and display your content for operating and improving the service.</li>
-    <li>Do not post illegal, infringing, hateful, harassing, deceptive, or unsafe content. Do not spam or attempt to manipulate ratings.</li>
-    <li>We may remove content or suspend accounts that violate these Terms or our guidelines.</li>
-  </ul>
+    <h2>Your Account</h2>
+    <ul>
+      <li>You are responsible for maintaining the security of your account and device.</li>
+      <li>You must provide accurate information and comply with applicable laws.</li>
+    </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>GoRoam uses third-party services (e.g., Google Maps/Places, Firebase). These services may have their own terms and policies.</p>
+    <h2>User Content &amp; Conduct</h2>
+    <ul>
+      <li>You retain ownership of content you submit (e.g., reviews, photos). You grant GoRoam a worldwide, non-exclusive, royalty-free license to host, store, reproduce, modify, and display your content for operating and improving the service.</li>
+      <li>Do not post illegal, infringing, hateful, harassing, deceptive, or unsafe content. Do not spam or attempt to manipulate ratings.</li>
+      <li>We may remove content or suspend accounts that violate these Terms or our guidelines.</li>
+    </ul>
 
-  <h2>Disclaimers</h2>
-  <p>GoRoam is provided “AS IS” and “AS AVAILABLE”. We do not guarantee accuracy of place data or uninterrupted operation.</p>
+    <h2>Third-Party Services</h2>
+    <p>GoRoam uses third-party services (e.g., Google Maps/Places, Firebase). These services may have their own terms and policies.</p>
 
-  <h2>Limitation of Liability</h2>
-  <p>To the maximum extent permitted by law, GoRoam and its affiliates will not be liable for indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill.</p>
+    <h2>Disclaimers</h2>
+    <p>GoRoam is provided “AS IS” and “AS AVAILABLE”. We do not guarantee accuracy of place data or uninterrupted operation.</p>
 
-  <h2>Termination</h2>
-  <p>We may suspend or terminate your access if you violate these Terms or for safety, legal, or operational reasons. You may stop using GoRoam at any time; you can request account deletion via in-app controls (if available) or by contacting support.</p>
+    <h2>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, GoRoam and its affiliates will not be liable for indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill.</p>
 
-  <h2>Governing Law & Dispute Resolution</h2>
-  <p>These Terms are governed by the laws of your principal place of business (specify). Any disputes will be resolved in the courts located there, unless local law requires otherwise. You and GoRoam may also agree to arbitration where applicable.</p>
+    <h2>Termination</h2>
+    <p>We may suspend or terminate your access if you violate these Terms or for safety, legal, or operational reasons. You may stop using GoRoam at any time; you can request account deletion via in-app controls (if available) or by contacting support.</p>
 
-  <h2>Changes</h2>
-  <p>We may update these Terms; continued use after changes means you accept the updated Terms.</p>
+    <h2>Governing Law &amp; Dispute Resolution</h2>
+    <p>These Terms are governed by the laws of <em>[your governing jurisdiction—update this]</em>. Any disputes will be resolved in the courts located there, unless local law requires otherwise. You and GoRoam may also agree to arbitration where applicable.</p>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:support@GoRoamapp.com">support@GoRoamapp.com</a></p>
+    <h2>Changes</h2>
+    <p>We may update these Terms; continued use after changes means you accept the updated Terms.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@approamly.com">support@approamly.com</a></p>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> GoRoam. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
