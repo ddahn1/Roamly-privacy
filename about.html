@@ -3,30 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>About GoRoam</title>
-  <meta name="description" content="GoRoam helps you discover places, share quick reviews, and keep track of your favorites—privately and effortlessly." />
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Find better places faster with GoRoam. Discover nearby gems, share quick photo reviews, and save favorites—with simple privacy controls when you want them." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="canonical" href="https://approamly.com/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="GoRoam" />
+  <meta property="og:title" content="About GoRoam" />
+  <meta property="og:description" content="Discover local gems, share quick reviews, and keep a private list of favorites. Coffee, food, trails, nights out—decide where to go next in seconds." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://approamly.com/about.html" />
+  <meta property="og:image" content="https://approamly.com/assets/og/goroam-og.jpg" />
+  <meta property="og:image:alt" content="GoRoam screenshots with place cards and a favorites list." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About GoRoam" />
+  <meta name="twitter:description" content="Find better places faster—discover, share, and save favorites with GoRoam. Quick posts, clean threads, and privacy when you want it." />
+  <meta name="twitter:image" content="https://approamly.com/assets/og/goroam-og.jpg" />
+
   <style>
-    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0}
+    :root{--text:#0f172a;--muted:#475569;--bg:#ffffff;--accent:#0ea5e9;--soft:#f1f5f9;--border:#e2e8f0;--ok:#16a34a;--warn:#ea580c}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;line-height:1.6}
-    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    .container{max-width:1000px;margin:2rem auto;padding:0 1rem}
     header{border-bottom:1px solid var(--border);background:var(--soft)}
     .nav{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.75rem 1rem}
     .nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .nav a[aria-current="page"]{color:var(--text)}
     .nav a:hover{color:var(--accent)}
     .brand{display:flex;align-items:center;gap:.5rem}
     .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
-    h1{font-size:2rem;margin:.25rem 0 1rem}
-    h2{font-size:1.25rem;margin:2rem 0 .5rem}
+    .hero{padding:1.25rem 0}
+    h1{font-size:2.2rem;margin:.25rem 0 .25rem}
+    h2{font-size:1.3rem;margin:2rem 0 .5rem}
+    h3{margin:.25rem 0 .25rem}
     p{margin:.5rem 0 1rem}
     ul,ol{margin:.5rem 0 1rem 1.25rem}
-    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;margin:1rem 0}
     .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:.25rem .6rem;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:.85rem;color:var(--muted)}
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;margin:1rem 0}
     .grid{display:grid;gap:1rem}
-    @media (min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    @media (min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--soft);border:1px solid var(--border);border-radius:6px;padding:.1rem .35rem}
+    .toc{display:flex;flex-wrap:wrap;gap:.5rem}
+    .toc a{color:var(--muted);text-decoration:none}
+    .toc a:hover{color:var(--accent);text-decoration:underline}
+    details{border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem;background:#fff}
+    details+details{margin-top:.75rem}
+    summary{cursor:pointer;font-weight:600}
+    .note{font-size:.95rem;padding:.5rem .75rem;border-left:4px solid var(--accent);background:var(--soft);border-radius:6px}
     footer{margin:3rem 0 2rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem}
     a{color:var(--accent)}
     a:hover{text-decoration:underline}
-    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--soft);border:1px solid var(--border);border-radius:6px;padding:.1rem .35rem}
   </style>
 </head>
 <body>
@@ -46,19 +78,34 @@
   </header>
 
   <main class="container">
-    <h1>About GoRoam</h1>
-    <p class="muted">Last updated: September 2025</p>
+    <section class="hero">
+      <h1>About GoRoam</h1>
+      <p class="muted">Last updated: September 2025</p>
+      <p class="note">GoRoam helps you find better places faster—discover nearby gems, share quick photo reviews, and save your favorites, with simple privacy controls when you want them.</p>
+      <div class="toc" aria-label="On this page">
+        <a href="#mission" class="pill">Our mission</a>
+        <a href="#what-you-can-do" class="pill">What you can do</a>
+        <a href="#how-it-works" class="pill">How it works</a>
+        <a href="#privacy" class="pill">Privacy at a glance</a>
+        <a href="#safety" class="pill">Safety & moderation</a>
+        <a href="#who" class="pill">Who it’s for</a>
+        <a href="#faq" class="pill">FAQ</a>
+        <a href="#contact" class="pill">Contact</a>
+        <a href="#legal" class="pill">Legal</a>
+      </div>
+    </section>
 
-    <div class="card">
-      <p><strong>GoRoam</strong> helps you discover places, share quick reviews, and keep track of your favorites—privately and effortlessly. Whether it’s a cozy coffee shop, a hidden hiking trail, or a late-night food spot, GoRoam makes it easy to capture your experience and find where to go next.</p>
-    </div>
+    <section id="mission" class="card">
+      <h2>Our mission</h2>
+      <p>Most review apps are noisy, ad-heavy, and try to be social networks. <strong>GoRoam is place-first</strong>: a lightweight way to capture where you went, what you loved, and what you’d tell a friend—without the clutter. We focus on <em>signal over noise</em>, so you can decide where to go next in seconds.</p>
+    </section>
 
-    <h2>What you can do</h2>
+    <h2 id="what-you-can-do">What you can do</h2>
     <div class="grid cols-2">
       <div class="card">
         <h3>Discover &amp; Save</h3>
         <ul>
-          <li>Browse by category (Coffee, Restaurants, Adventure, Entertainment, Fitness).</li>
+          <li>Browse by category (<span class="pill">Coffee</span> <span class="pill">Restaurants</span> <span class="pill">Adventure</span> <span class="pill">Entertainment</span> <span class="pill">Fitness</span>).</li>
           <li>See posts from people you follow and spots nearby.</li>
           <li>Save places you love to revisit later.</li>
         </ul>
@@ -66,7 +113,7 @@
       <div class="card">
         <h3>Share Quickly</h3>
         <ul>
-          <li>Post a photo, a sentence, and a tag—done.</li>
+          <li>Post a photo, a sentence, and a place tag—done.</li>
           <li>Mention places to keep your map tidy.</li>
           <li>Comment and reply with clean, threaded conversations.</li>
         </ul>
@@ -74,7 +121,7 @@
       <div class="card">
         <h3>Keep Control</h3>
         <ul>
-          <li>Private account mode shows posts only to approved followers.</li>
+          <li>Private Account mode shows posts only to approved followers.</li>
           <li>Edit or delete your posts and comments anytime.</li>
           <li>Like/unlike with clear counts—no mystery.</li>
         </ul>
@@ -89,27 +136,86 @@
       </div>
     </div>
 
-    <h2>Privacy at a glance</h2>
-    <div class="card">
-      <ul>
-        <li>You control who can see your content via Private Account settings.</li>
-        <li>Delete posts/comments in-app; account deletion is available in Settings.</li>
-        <li>Place and region tags are optional—use them when useful.</li>
-        <li>Read the full <a href="privacy.html">Privacy Policy</a> for details on data, retention, and your rights.</li>
-      </ul>
-      <p>Questions about privacy? Email <a href="mailto:support@approamly.com">support@approamly.com</a>.</p>
+    <h2 id="how-it-works">How it works</h2>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>1) Discover</h3>
+        <p>Open GoRoam to see nearby picks and categories. Tap a place to view quick takes, photos, and tips from people you trust.</p>
+      </div>
+      <div class="card">
+        <h3>2) Share</h3>
+        <p>Snap a photo (optional), write one or two lines, tag the spot. That’s it—your post helps friends decide fast.</p>
+      </div>
+      <div class="card">
+        <h3>3) Revisit</h3>
+        <p>Save places you love. Your lightweight lists become a personal map of go-to coffee, bites, trails, and more.</p>
+      </div>
     </div>
 
-    <h2>Contact</h2>
+    <h2 id="privacy">Privacy at a glance</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Your audience, your choice:</strong> Private Account limits content to approved followers.</li>
+        <li><strong>Control your footprint:</strong> Delete posts/comments in-app; account deletion is available in Settings.</li>
+        <li><strong>Location is optional:</strong> You can disable device location in OS settings; some features may be limited.</li>
+        <li>Read the full <a href="privacy.html">Privacy Policy</a> for details on data, retention, and your rights.</li>
+      </ul>
+      <p>Privacy questions? Email <a href="mailto:support@approamly.com">support@approamly.com</a>.</p>
+    </div>
+
+    <h2 id="safety">Safety & moderation</h2>
+    <div class="card">
+      <ul>
+        <li>No illegal, hateful, harassing, deceptive, or unsafe content.</li>
+        <li>We may remove content or suspend accounts that violate our <a href="terms.html">Terms</a>.</li>
+        <li>Report issues via <a href="support.html">Support</a> or email <a href="mailto:support@approamly.com">support@approamly.com</a>.</li>
+      </ul>
+    </div>
+
+    <h2 id="who">Who it’s for</h2>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Weekend explorers</h3>
+        <p>Find a trail, a café, or a new neighborhood gem—fast.</p>
+      </div>
+      <div class="card">
+        <h3>Food lovers</h3>
+        <p>Short, useful notes beat essays. Know what to order and why.</p>
+      </div>
+      <div class="card">
+        <h3>Friends & groups</h3>
+        <p>Keep trip ideas and go-backs in one place. Share only with your circle.</p>
+      </div>
+    </div>
+
+    <h2 id="faq">FAQ</h2>
+    <details>
+      <summary>Is GoRoam free?</summary>
+      <p>Yes. Some optional features may evolve over time, but discovering and sharing places is free.</p>
+    </details>
+    <details>
+      <summary>Do I need location enabled?</summary>
+      <p>No. You can use GoRoam without device location, but nearby and map features work best with it on.</p>
+    </details>
+    <details>
+      <summary>How do I delete my account?</summary>
+      <p>Use the in-app option in <em>Settings → Delete Account</em>, or email <a href="mailto:support@approamly.com?subject=Account%20Deletion%20Request">support@approamly.com</a>.</p>
+    </details>
+    <details>
+      <summary>What services power GoRoam?</summary>
+      <p>We use trusted providers like Firebase and Google Maps/Places. See <a href="privacy.html">Privacy</a> for details.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
     <div class="card">
       <ul>
         <li><strong>Support:</strong> <a href="mailto:support@approamly.com?subject=GoRoam%20Support">support@approamly.com</a></li>
         <li><strong>Business / Partnerships:</strong> <a href="mailto:GoRoam@approamly.com?subject=GoRoam%20Business%20Inquiry">GoRoam@approamly.com</a></li>
-        <li class="muted">Tip: If links don’t open your mail app, copy the address or use <span class="kbd">⌘</span> + <span class="kbd">C</span> / <span class="kbd">Ctrl</span> + <span class="kbd">C</span>.</li>
       </ul>
+      <p class="muted">Tip: If links don’t open your mail app, copy the address or use <span class="kbd">⌘</span>+<span class="kbd">C</span> / <span class="kbd">Ctrl</span>+<span class="kbd">C</span>.</p>
     </div>
 
-    <h2>Legal</h2>
+    <h2 id="legal">Legal</h2>
     <ul>
       <li><a href="terms.html">Terms of Service</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
@@ -120,6 +226,25 @@
   <footer class="container">
     <p>© <span id="y"></span> GoRoam. All rights reserved.</p>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"GoRoam",
+    "url":"https://approamly.com",
+    "logo":"https://approamly.com/assets/brand/logo.png",
+    "email":"support@approamly.com",
+    "contactPoint":[
+      {"@type":"ContactPoint","email":"support@approamly.com","contactType":"customer support"},
+      {"@type":"ContactPoint","email":"GoRoam@approamly.com","contactType":"business"}
+    ]
+  }
+  </script>
 </body>
 </html>
